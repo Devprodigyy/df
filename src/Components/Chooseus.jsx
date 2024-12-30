@@ -24,7 +24,7 @@ const Chooseus = () => {
             {reasons.map((item, index) => (
 
 
-                <div key={index} className='w-[300px] min-h-[250px] bg-yellow-500 p-4 m-2 rounded-lg shadow-md'>
+                <div key={index} className='cardsbg w-[300px] min-h-[250px] p-4 m-2 rounded-lg shadow-md'>
                     <h6 className='h-[50px] text-center text-lg font-bold mb-4'>{item.heading}</h6>
                     <p className='text-sm flex items-center justify-center text-center font-semibold'>{item.description}</p>
 
