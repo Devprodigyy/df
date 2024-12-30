@@ -10,6 +10,7 @@ import Testimonial from './Components/Testomonials';
 import FAQ from './Components/Faqdata';
 import Connect from './Components/Connect';
 import Footer from './Components/Footer';
+import Chooseus from './Components/Chooseus';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Card />
       <About />
       {/* <Team /> */}
+      <Chooseus />
       <Testimonial />
       <FAQ />
       <Connect />
