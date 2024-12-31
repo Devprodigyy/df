@@ -1,11 +1,17 @@
 import React, { useEffect } from "react";
 import { Link } from "react-scroll";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
+// Navbar Section
 const Navbar = () => {
   useEffect(() => {
-    gsap.to("#logo", {
+    gsap.from("#logo", {
       x: 10,
+      repeat: -1,
+      yoyo: true,
+      scale: 0.99,
+      color: "white",
     });
   }, []);
 
@@ -25,20 +31,31 @@ const Navbar = () => {
     });
   };
 
-   gsap.to("#menusec", {
-      top: "-120%",
-      duration: 2.5,
+  gsap.to("#menusec", {
+    top: "-120%",
+    duration: 2.5,
+    ease: "power3.inOut",
+  });
+
+  useGSAP(() => {
+    gsap.from("#desktopnav .link", {
+      y: -15,
+      opacity: 0,
+      duration: 1,
       ease: "power3.inOut",
-    });
+      stagger: 1,
+    })
+
+  })
 
   return (
     <>
-      <section id="menusec"  className="absolute top-[-120%] z-40 h-full w-full bg-black text-white pt-4 px-4" >
+      {/* moveing menu pannel  */}
+      <section id="menusec" className="absolute top-[-120%] z-40 h-full w-full bg-black text-white pt-4 px-4" >
         <h6
           onClick={closeMenu}
           className="h-[10vh] w-full items-center flex justify-end text-[3vh] text-end cursor-pointer"
-        >
-          Close
+        > Close
         </h6>
         <div className="h-[70vh] w-full flex flex-col border-b-[1px] border-white md:flex-row">
           <div className="px-10 gap-2 h-[50%] w-full flex flex-col justify-center md:h-full">
@@ -81,6 +98,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+
         <div className="w-full h-[15vh] flex gap-6 items-center justify-center">
           <a href="#">Instagram</a>
           <a href="#">LinkedIn</a>
@@ -88,13 +106,15 @@ const Navbar = () => {
         </div>
       </section>
 
-      <nav className="w-full h-[10vh] absoulte z-30 top-0 px-3 bg-black border-b-2 border-white text-yellow-500 flex items-center justify-between">
+
+      {/* static menu pannel  */}
+      <nav className="w-full h-[10vh] sticky z-30 top-0 px-3 bg-black border-b-2 border-white text-yellow-500 flex items-center justify-between">
         <h1 id="logo" className="text-[4vw] md:text-[2vw]">
           DreamForge
         </h1>
-        <div className="h-full w-[60%] hidden md:flex items-center justify-evenly xl:w-[40%]">
+        <div id="desktopnav" className="h-full w-[60%] hidden md:flex items-center justify-evenly xl:w-[40%]">
           <Link
-            className="text-white text-[2.2vh]"
+            className="link text-white text-[2.2vh]"
             smooth={true}
             duration={500}
             to="home"
@@ -104,7 +124,17 @@ const Navbar = () => {
             Home
           </Link>
           <Link
-            className="text-white text-[2.2vh]"
+            className="link text-white text-[2.2vh]"
+            smooth={true}
+            duration={500}
+            to="services"
+            spy={true}
+            offset={-70}
+          >
+            Services
+          </Link>
+          <Link
+            className="link text-white text-[2.2vh]"
             smooth={true}
             duration={500}
             to="features"
@@ -114,7 +144,7 @@ const Navbar = () => {
             Features
           </Link>
           <Link
-            className="text-white text-[2.2vh]"
+            className="link text-white text-[2.2vh]"
             smooth={true}
             duration={500}
             to="about"
@@ -124,7 +154,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            className="text-white text-[2.2vh]"
+            className="link text-white text-[2.2vh]"
             smooth={true}
             duration={500}
             to="contact"

@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Card data
 const reasons = [
     {
         heading: "Comprehensive Digital Marketing",
@@ -14,7 +15,6 @@ const reasons = [
         description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     }
 ];
-
 const Chooseus = () => {
     return (
         <section className='min-h-[60vh] pt-[15vh]  bg-black relative py-5 px-2 flex flex-col items-center justify-center md:flex-row'>
@@ -22,12 +22,9 @@ const Chooseus = () => {
                 Why Choose us
             </h1>
             {reasons.map((item, index) => (
-
-
-                <div key={index} className='cardsbg w-[300px] min-h-[250px] p-4 m-2 rounded-lg shadow-md'>
+                <div key={index} className='bg-white border-[5px] border-yellow-300 w-[300px] min-h-[250px] p-4 m-2 rounded-lg shadow-md'>
                     <h6 className='h-[50px] text-center text-lg font-bold mb-4'>{item.heading}</h6>
                     <p className='text-sm flex items-center justify-center text-center font-semibold'>{item.description}</p>
-
                 </div>
             ))}
         </section>

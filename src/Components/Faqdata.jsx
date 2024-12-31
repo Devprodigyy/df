@@ -1,5 +1,6 @@
 import React from "react";
 
+// FAQ data
 const faqData = [
   {
     id: 1,

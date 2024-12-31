@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Footer Section
 const Footer = () => {
   return (
    <footer className='min-h-[10vh] py-[5vh] flex items-center justify-center flex-col bg-black'>

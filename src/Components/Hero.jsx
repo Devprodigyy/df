@@ -2,6 +2,8 @@ import React from 'react'
 import img1 from '/src/assets/dreamforge1.webp'
 import ladki from '/src/assets/ladki.png'
 import '../index.css'
+
+// Hero Section
 const Hero = () => {
   return (
     <section id='home' className='h-[100vh] w-full relative flex flex-col items-center justify-center'>

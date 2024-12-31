@@ -15,7 +15,9 @@
     "locomotive-scroll": "^4.1.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scroll": "^1.9.0"
+    "react-scroll": "^1.9.0",
+    "sheryjs": "^1.0.0-beta.0.1.8",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

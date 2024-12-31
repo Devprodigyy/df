@@ -1,5 +1,6 @@
 import React from "react";
 
+// card data
 const cardData = [
   {
     id: 1,
@@ -37,14 +38,14 @@ const cardData = [
     description: "This is the fourth card description.",
     image: "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  
- 
+
+
 ];
 
 const Card = () => {
   return (
     <div className="p-6 min-h-[60vh] xl:w-[80%] mx-auto">
-      <h1 className="text-[4vh] font-bold mb-6 text-center text-black">Responsive Cards</h1>
+      <h1 id="services" className="text-[4vh] font-bold mb-6 text-center text-black">Services</h1>
       <div className="flex flex-wrap justify-center gap-6 ">
         {cardData.map((card) => (
           <div

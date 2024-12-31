@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Team 
 const Team = () => {
   const team = [
     {

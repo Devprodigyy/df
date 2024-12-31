@@ -2,41 +2,46 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
   font-family: "Marcellus", serif;
   font-weight: 400;
   font-style: normal;
 }
-html,body{
+
+html,
+body {
   height: 100%;
   width: 100%;
-  /* scroll-behavior: smooth; */
-
 }
 
 body {
   background: rgb(255, 231, 162);
-  background: radial-gradient(
-    circle,
-    rgba(255, 231, 162, 1) 0%,
-    rgba(255, 201, 41, 1) 66%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 231, 162, 1) 0%,
+      rgba(255, 201, 41, 1) 66%);
 }
 
-#ladki{
+/* scroll bar hide */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* hero section girl */
+#ladki {
   filter: drop-shadow(2px 4px 20px black);
 }
-#home{
-  background-image: url(https://img.freepik.com/free-vector/low-poly-style-yellow-triangle-shape-pattern-banner-with-text-space_1017-53489.jpg?t=st=1735450939~exp=1735454539~hmac=8ee09f624091944abdd9ed4146d7ac90daed40aa462782a2fd30da75225f4895&w=1380);
+
+/* backgroun img in hero sec */
+#home {
+  background-image: url(../src/assets/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.cardsbg{
+/* for cards background */
+.cardsbg {
   background: rgb(255, 231, 162);
-  background: radial-gradient(
-    circle,
-    rgba(255, 231, 162, 1) 0%,
-    rgba(255, 201, 41, 1) 66%
-  );
+  background: radial-gradient(circle,
+      rgba(255, 231, 162, 1) 0%,
+      rgba(255, 201, 41, 1) 66%);
 }
