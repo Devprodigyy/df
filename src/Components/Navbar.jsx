@@ -38,13 +38,13 @@ const Navbar = () => {
   });
 
   useGSAP(() => {
-    gsap.from("#desktopnav .link", {
-      y: -15,
-      opacity: 0,
-      duration: 1,
-      ease: "power3.inOut",
-      stagger: 1,
-    })
+    // gsap.from("#desktopnav .link", {
+    //   y: -15,
+    //   opacity: 0,
+    //   duration: 1,
+    //   ease: "power3.inOut",
+    //   stagger: 1,
+    // })
 
   })
 
