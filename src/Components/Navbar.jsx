@@ -6,13 +6,13 @@ import { useGSAP } from "@gsap/react";
 // Navbar Section
 const Navbar = () => {
   useEffect(() => {
-    gsap.from("#logo", {
-      x: 10,
-      repeat: -1,
-      yoyo: true,
-      scale: 0.99,
-      color: "white",
-    });
+    // gsap.from("#logo", {
+    //   x: 10,
+    //   repeat: -1,
+    //   yoyo: true,
+    //   scale: 0.99,
+    //   color: "white",
+    // });
   }, []);
 
   const openMenu = () => {
