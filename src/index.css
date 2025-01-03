@@ -45,3 +45,14 @@ body::-webkit-scrollbar {
       rgba(255, 231, 162, 1) 0%,
       rgba(255, 201, 41, 1) 66%);
 }
+
+.slick-slide{
+  margin: 5px;
+}
+
+
+.swiper-slide{
+background-color: transparent;
+padding: 2px;
+width: 40%;
+}

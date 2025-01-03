@@ -16,8 +16,11 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scroll": "^1.9.0",
+    "react-slick": "^0.30.3",
     "sheryjs": "^1.0.0-beta.0.1.8",
-    "swiper": "^11.1.15"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.1.15",
+    "tailwind-scrollbar-hide": "^2.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

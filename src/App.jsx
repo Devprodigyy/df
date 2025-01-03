@@ -11,12 +11,13 @@ import FAQ from './Components/Faqdata';
 import Connect from './Components/Connect';
 import Footer from './Components/Footer';
 import Chooseus from './Components/Chooseus';
+import Testo from './Components/Testo';
 
 
 const App = () => {
 
   return (
-    <main className='relative'>
+    <main className='relative overflow-x-hidden'>
       {/* loading page */}
 
       {/* <div id='loadpage' className='loading w-full h-full bg-black absolute top-0 z-50'>
@@ -36,7 +37,8 @@ const App = () => {
         <About />
         {/* <Team /> */} 
         <Chooseus />
-        <Testimonial />
+        {/* <Testimonial /> */}
+        <Testo />
         <FAQ />
         <Connect />
         <Footer />

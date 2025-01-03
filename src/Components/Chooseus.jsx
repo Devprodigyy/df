@@ -16,6 +16,9 @@ const reasons = [
     }
 ];
 const Chooseus = () => {
+    
+
+
     return (
         <section className='min-h-[60vh] pt-[15vh]  bg-black relative py-5 px-2 flex flex-col items-center justify-center md:flex-row'>
             <h1 className="top-10 text-3xl md:text-4xl text-white font-bold text-center mb-[20px] md:absolute">
