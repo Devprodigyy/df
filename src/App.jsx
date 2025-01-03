@@ -6,7 +6,6 @@ import Features from './Components/Features';
 import Card from './Components/Cards';
 import About from './Components/About';
 // import Team from './Components/Team'; 
-import Testimonial from './Components/Testomonials';
 import FAQ from './Components/Faqdata';
 import Connect from './Components/Connect';
 import Footer from './Components/Footer';
